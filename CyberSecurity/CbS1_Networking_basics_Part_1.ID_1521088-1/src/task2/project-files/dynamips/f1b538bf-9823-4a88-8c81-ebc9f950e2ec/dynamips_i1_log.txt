@@ -1,0 +1,19 @@
+Jun 27 19:07:03.142 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 19:07:03.143 HYPERVISOR: Started on IP = localhost, TCP port = 15600.
+Jun 27 19:07:03.414 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 19:07:03.416 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\dimak\GNS3\projects\task2\project-files\dynamips 
+Jun 27 19:07:03.422 GENERAL: working_dir=C:\Users\dimak\GNS3\projects\task2\project-files\dynamips
+Jun 27 19:07:03.423 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\dimak\GNS3\projects\task2\project-files\dynamips\6e49f9a1-03d0-41a0-9227-734f96ff34b6 
+Jun 27 19:07:03.423 GENERAL: working_dir=C:\Users\dimak\GNS3\projects\task2\project-files\dynamips\6e49f9a1-03d0-41a0-9227-734f96ff34b6
+Jun 27 19:07:03.424 HYPERVISOR: exec_cmd: vm create c3745 1 c3745 
+Jun 27 19:07:03.425 VM: VM c3745 created.
+Jun 27 19:07:03.426 HYPERVISOR: exec_cmd: vm set_con_tcp_port c3745 5000 
+Jun 27 19:07:03.426 HYPERVISOR: exec_cmd: c3745 get_mac_addr c3745 
+Jun 27 19:07:03.427 HYPERVISOR: exec_cmd: vm set_disk0 c3745 0 
+Jun 27 19:07:03.427 HYPERVISOR: exec_cmd: vm set_exec_area c3745 64 
+Jun 27 19:07:03.428 HYPERVISOR: exec_cmd: vm get_status c3745 
+Jun 27 19:07:03.428 HYPERVISOR: exec_cmd: vm set_idle_pc c3745 0x60aa72bc 
+Jun 27 19:07:03.428 HYPERVISOR: exec_cmd: vm set_ios c3745 C:/Users/dimak/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.bin 
+Jun 27 19:07:03.429 HYPERVISOR: exec_cmd: c3745 set_mac_addr c3745 c401.0474.0000 
+Jun 27 19:07:03.429 HYPERVISOR: exec_cmd: vm set_nvram c3745 256 
+Jun 27 19:07:03.429 HYPERVISOR: exec_cmd: vm set_ram c3745 256 

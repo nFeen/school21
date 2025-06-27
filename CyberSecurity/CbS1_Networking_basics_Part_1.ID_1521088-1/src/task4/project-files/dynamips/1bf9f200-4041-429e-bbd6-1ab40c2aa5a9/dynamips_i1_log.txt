@@ -1,0 +1,32 @@
+Jun 27 18:32:20.847 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 18:32:20.847 HYPERVISOR: Started on IP = localhost, TCP port = 6917.
+Jun 27 18:32:21.163 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 18:32:21.165 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\dimak\GNS3\projects\task3\project-files\dynamips 
+Jun 27 18:32:21.172 GENERAL: working_dir=C:\Users\dimak\GNS3\projects\task3\project-files\dynamips
+Jun 27 18:32:21.173 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\edf192e2-c63b-43ec-941b-09c392a094e4 
+Jun 27 18:32:21.173 GENERAL: working_dir=C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\edf192e2-c63b-43ec-941b-09c392a094e4
+Jun 27 18:32:21.173 HYPERVISOR: exec_cmd: vm create Cisco1 1 c3745 
+Jun 27 18:32:21.173 VM: VM Cisco1 created.
+Jun 27 18:32:21.174 HYPERVISOR: exec_cmd: vm set_con_tcp_port Cisco1 5000 
+Jun 27 18:32:21.174 HYPERVISOR: exec_cmd: c3745 get_mac_addr Cisco1 
+Jun 27 18:32:21.175 HYPERVISOR: exec_cmd: vm set_disk0 Cisco1 0 
+Jun 27 18:32:21.175 HYPERVISOR: exec_cmd: vm set_exec_area Cisco1 64 
+Jun 27 18:32:21.176 HYPERVISOR: exec_cmd: vm get_status Cisco1 
+Jun 27 18:32:21.176 HYPERVISOR: exec_cmd: vm set_idle_pc Cisco1 0x60aa72bc 
+Jun 27 18:32:21.177 HYPERVISOR: exec_cmd: vm set_ios Cisco1 C:/Users/dimak/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.bin 
+Jun 27 18:32:21.177 HYPERVISOR: exec_cmd: c3745 set_mac_addr Cisco1 c401.131c.0000 
+Jun 27 18:32:21.178 HYPERVISOR: exec_cmd: vm set_nvram Cisco1 256 
+Jun 27 18:32:21.178 HYPERVISOR: exec_cmd: vm set_ram Cisco1 256 
+Jun 27 18:32:21.796 HYPERVISOR: exec_cmd: nio create_udp udp-9cf172a0-7577-48b3-b7ac-ed1327468904 10002 127.0.0.1 10003 
+Jun 27 18:32:22.048 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Cisco1 0 0 udp-9cf172a0-7577-48b3-b7ac-ed1327468904 
+Jun 27 18:32:22.049 HYPERVISOR: exec_cmd: vm get_status Cisco1 
+Jun 27 18:35:18.018 HYPERVISOR: exec_cmd: vm set_ghost_status Cisco1 2 
+Jun 27 18:35:18.025 HYPERVISOR: exec_cmd: vm set_ghost_file Cisco1 C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\c3745-adventerprisek9-mz.124-25.bin-256.ghost 
+Jun 27 18:35:18.025 HYPERVISOR: exec_cmd: vm get_status Cisco1 
+Jun 27 18:35:18.034 HYPERVISOR: exec_cmd: vm set_config Cisco1 configs\i1_startup-config.cfg 
+Jun 27 18:35:18.034 HYPERVISOR: exec_cmd: vm start Cisco1 
+Jun 27 18:40:44.442 HYPERVISOR: exec_cmd: nio bind_filter udp-9cf172a0-7577-48b3-b7ac-ed1327468904 2 capture 
+Jun 27 18:40:44.442 HYPERVISOR: exec_cmd: nio setup_filter udp-9cf172a0-7577-48b3-b7ac-ed1327468904 2 en10mb C:\Users\dimak\GNS3\projects\task3\project-files\captures\Cisco1_FastEthernet00_to_Cisco2_FastEthernet00.pcap 
+Jun 27 18:42:48.481 HYPERVISOR: exec_cmd: vm extract_config Cisco1 
+Jun 27 18:42:48.494 HYPERVISOR: exec_cmd: vm extract_config Cisco1 
+Jun 27 18:43:55.499 HYPERVISOR: exec_cmd: nio unbind_filter udp-9cf172a0-7577-48b3-b7ac-ed1327468904 2 

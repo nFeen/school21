@@ -1,0 +1,44 @@
+Jun 27 18:32:21.258 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 18:32:21.260 HYPERVISOR: Started on IP = localhost, TCP port = 6924.
+Jun 27 18:32:21.766 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 18:32:21.768 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\dimak\GNS3\projects\task3\project-files\dynamips 
+Jun 27 18:32:21.768 GENERAL: working_dir=C:\Users\dimak\GNS3\projects\task3\project-files\dynamips
+Jun 27 18:32:21.769 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\1116d48c-82c3-4d68-a769-711b5ecbf3d5 
+Jun 27 18:32:21.770 GENERAL: working_dir=C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\1116d48c-82c3-4d68-a769-711b5ecbf3d5
+Jun 27 18:32:21.770 HYPERVISOR: exec_cmd: vm create Cisco2 2 c3745 
+Jun 27 18:32:21.771 VM: VM Cisco2 created.
+Jun 27 18:32:21.772 HYPERVISOR: exec_cmd: vm set_con_tcp_port Cisco2 5001 
+Jun 27 18:32:21.772 HYPERVISOR: exec_cmd: c3745 get_mac_addr Cisco2 
+Jun 27 18:32:21.772 HYPERVISOR: exec_cmd: vm set_disk0 Cisco2 0 
+Jun 27 18:32:21.772 HYPERVISOR: exec_cmd: vm set_exec_area Cisco2 64 
+Jun 27 18:32:21.774 HYPERVISOR: exec_cmd: vm get_status Cisco2 
+Jun 27 18:32:21.774 HYPERVISOR: exec_cmd: vm set_idle_pc Cisco2 0x60aa72bc 
+Jun 27 18:32:21.775 HYPERVISOR: exec_cmd: vm set_ios Cisco2 C:/Users/dimak/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.bin 
+Jun 27 18:32:21.776 HYPERVISOR: exec_cmd: c3745 set_mac_addr Cisco2 c402.6534.0000 
+Jun 27 18:32:21.776 HYPERVISOR: exec_cmd: vm set_nvram Cisco2 256 
+Jun 27 18:32:21.777 HYPERVISOR: exec_cmd: vm set_ram Cisco2 256 
+Jun 27 18:32:22.056 HYPERVISOR: exec_cmd: nio create_udp udp-38ba79b5-0f3e-4ee5-913a-74e11982206d 10004 127.0.0.1 10005 
+Jun 27 18:32:22.312 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Cisco2 0 0 udp-38ba79b5-0f3e-4ee5-913a-74e11982206d 
+Jun 27 18:32:22.313 HYPERVISOR: exec_cmd: vm get_status Cisco2 
+Jun 27 18:35:17.519 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 27 18:35:17.520 VM: VM Ghost created.
+Jun 27 18:35:17.520 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/dimak/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.bin 
+Jun 27 18:35:17.521 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 27 18:35:17.521 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\c3745-adventerprisek9-mz.124-25.bin-256.ghost 
+Jun 27 18:35:17.522 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 27 18:35:17.522 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 27 18:35:17.523 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 27 18:35:17.524 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 27 18:35:17.805 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 27 18:35:17.806 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 27 18:35:18.002 VM: VM Ghost shutdown.
+Jun 27 18:35:18.002 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 27 18:35:18.005 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 27 18:35:18.005 VM: VM Ghost destroyed.
+Jun 27 18:35:18.016 HYPERVISOR: exec_cmd: vm set_ghost_status Cisco2 2 
+Jun 27 18:35:18.018 HYPERVISOR: exec_cmd: vm set_ghost_file Cisco2 C:\Users\dimak\GNS3\projects\task3\project-files\dynamips\c3745-adventerprisek9-mz.124-25.bin-256.ghost 
+Jun 27 18:35:18.018 HYPERVISOR: exec_cmd: vm get_status Cisco2 
+Jun 27 18:35:18.025 HYPERVISOR: exec_cmd: vm set_config Cisco2 configs\i2_startup-config.cfg 
+Jun 27 18:35:18.025 HYPERVISOR: exec_cmd: vm start Cisco2 
+Jun 27 18:43:18.408 HYPERVISOR: exec_cmd: vm extract_config Cisco2 
+Jun 27 18:43:18.420 HYPERVISOR: exec_cmd: vm extract_config Cisco2 
